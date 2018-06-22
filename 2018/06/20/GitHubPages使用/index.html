@@ -3,8 +3,8 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="yanm1ng&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
+  <meta name="description" content="www.fullstackpark.com">
+  <meta name="keyword" content="fullstackpark, vuejs, nodejs, Java, MySQL, PM">
   
     <link rel="shortcut icon" href="/css/images/logo.png">
   
@@ -153,9 +153,9 @@
 <li>***.github.io 的网站就已经可以打开了</li>
 <li><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">配置自己的域名</a></li>
 </ol>
-<p><img src="./images/github-a-record.png" alt="github-pages-a-record"></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fsjyu91z4fj30to0713zv.jpg" alt="github-pages-a-record"></p>
 <blockquote>
-<p>关于 HTTPS 的话<br>最开始会有一个最多 24小时的等待时间。<br>然后<br>HTTPS provides a layer of encryption that prevents others from snooping on or tampering with traffic to your site.<br>When HTTPS is enforced, your site will only be served over HTTPS. <a href="https://help.github.com/articles/securing-your-github-pages-site-with-https" target="_blank" rel="noopener">Learn more</a>.</p>
+<p>关于 HTTPS,最开始会有一个最多 24小时的等待时间。然后<br>HTTPS provides a layer of encryption that prevents others from snooping on or tampering with traffic to your site.<br>When HTTPS is enforced, your site will only be served over HTTPS. <a href="https://help.github.com/articles/securing-your-github-pages-site-with-https" target="_blank" rel="noopener">Learn more</a>.</p>
 </blockquote>
 <ol start="5">
 <li><p>GitHub Pages只支持纯静态，即站点只能放.js,.css,.html等类型的文件；</p>
@@ -167,24 +167,26 @@
 <li><p>hexo是基于nodejs的</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">$</span> npm install cnpm -g –registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> cnpm install hexo-cli –g #安装了cnpm之后，npm就完全可以代替啦。</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo init blog #初始化hexo</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> cd blog #进入到blog目录</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo server #启动hexo服务</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install cnpm -g –registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> cnpm install hexo-cli –g #安装了cnpm之后，npm就完全可以代替啦。</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo init blog #初始化hexo</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> cd blog #进入到blog目录</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo server #启动hexo服务</span><br></pre></td></tr></table></figure>
 <ol start="9">
 <li><p>打开浏览器，输入网址<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 神奇的一幕发生了</p>
 </li>
 <li><p>博客系统有了，自然得写一篇试试，新开一个cmd，进入到blog系统的根目录</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo new “这里是博客名字”</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new “这里是博客名字”</span><br></pre></td></tr></table></figure>
 <p>这行命令会在blog目录下的source/_posts下面生成一个名字对应的”.md”文件。这个文件是一个markdown文件，这个文件对应的就是博客系统中的一篇博客。</p>
 <ol start="11">
 <li>如果单单是这样，自然是不能上传到GitHub Pages的，因为它还不是一个静态资源。所以，接下来你需要执行以下命令</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">$</span> hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo generate</span><br></pre></td></tr></table></figure>
 <p>这个命令会让hexo生成博客系统对应的静态文件，文件目录为：blog/public/<br>只要把这里的文件上传到GitHub Pages就可以成为站点访问了！</p>
 <ol start="12">
 <li><p><a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">关于更多的部署细节</a></p>
 </li>
 <li><p><a href="https://github.com/yanm1ng/hexo-theme-vexo" target="_blank" rel="noopener">关于使用新的模板</a></p>
+</li>
+<li><p><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">关于留言系统</a></p>
 </li>
 </ol>
 </section>
@@ -311,15 +313,15 @@
     });
 
     // gitment
-    var gitmentConfig = "yanm1ng";
+    var gitmentConfig = "FullStackPark-Admin";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
         id: "GitHubPages使用",
-        owner: "yanm1ng",
-        repo: "yanm1ng.github.io",
+        owner: "FullStackPark-Admin",
+        repo: "fullstackpark.github.io",
         oauth: {
-          client_id: "0f87e490e00ee3fd87ef",
-          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
+          client_id: "b893f42f342e69e1f7e9",
+          client_secret: "9bf1e627514cefd1c38cdcafeeaa5ec3a2c19d00"
         },
         theme: {
           render(state, instance) {
